@@ -2,9 +2,12 @@
 import * as firebase from "firebase/app";
 import "firebase/database";
 
+const apiKey = process.env.FIREBASE_API_KEY;
+
+
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyD_fE4cWZGsqqPCNgNeJx31kjM1KCYmQk4",
+    apiKey: apiKey,
     authDomain: "rbc-bizmatch.firebaseapp.com",
     projectId: "rbc-bizmatch",
     storageBucket: "rbc-bizmatch.appspot.com",
