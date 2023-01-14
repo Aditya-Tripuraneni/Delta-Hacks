@@ -49,3 +49,6 @@ def company_match(target_field, companies_dict):
             companies_matched[i] = companies_dict[i]
     
     return companies_matched
+
+comp = Company(65432198, "Velocity Ventures Inc", "Distribution", "Finance", 90000.00 )
+send_data(comp)
