@@ -9,37 +9,35 @@ conn = sqlite3.connect('database.db')
 # Create a cursor
 cursor = conn.cursor()
 
-# Create a table
-cursor.execute("""CREATE TABLE companyData (
-                    name text,
-                    categoryType text,
-                    categoryLook text,
-                    profit REAL, 
-                    quarterRep REAL)""")
-
-# Insert data into the table
 
 # Commit the changes
 conn.commit()
 conn.close()
 
-def send_data(query, company):
+
+"""
+Name: send_data
+Paramaters: company
+Description: 
+    Adds the company registered into the data base
+"""
+def send_data(company):
     connection = sqlite3.connect("database.db")
     cur = connection.cursor()
-    cur.execute(f"INSERT INTO {query} VALUES (:name)", {"": company.name})
-    #cur.execute()
 
+    cur.execute(f"INSERT INTO companyData VALUES (:name, :categoryType, :categoryLook, :profit, :ID)", 
+    (company.name, company.current_field, company.field_desired, company.profit, company.id))
     #NOT FINISHED YET
-
 
     connection.commit()
     connection.close()
+
 
 def generate_user_id():
     length = 8
     choices = "1234567890"
     id = ""
-    while len(id) < length: 
+    while len(id) <= length: 
         id += random.choice(choices)
     return id
 

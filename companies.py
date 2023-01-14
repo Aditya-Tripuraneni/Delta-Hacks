@@ -5,8 +5,9 @@ class Company:
     
         self.id = int(id)
         self.name = name
-        self.comp_field = current_field
+        self.current_field = current_field
         self.field_desired = field_desired
         self.profit = float(profit)
+        
 
 
