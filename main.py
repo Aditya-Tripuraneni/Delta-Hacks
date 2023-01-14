@@ -43,4 +43,11 @@ def generate_user_id():
         id += random.choice(choices)
     return id
 
-
+# Function returning a dictionary of the companies that match the field the user is interested in.
+def company_match(target_field, companies_dict):
+    companies_matched = {}
+    for i in companies_dict:
+        if target_field == companies_dict[i]:
+            companies_matched[i] = companies_dict[i]
+    
+    return companies_matched
