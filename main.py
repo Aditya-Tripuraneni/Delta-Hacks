@@ -49,3 +49,7 @@ def company_match(target_field, companies_dict):
             companies_matched[i] = companies_dict[i]
     
     return companies_matched
+
+def retrieve_relevant_company():
+    
+
