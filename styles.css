@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #ffe375; /* yellow */
+  --secondary-color: #14366E; /* white */
+  --tertiary-color: #5D5D5D; /* blue */
+}
+
+
+body {
+  background: white;; /* gradient background */
+  font-family: 'San Francisco', sans-serif;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-box, .register-box {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: var(--tertiary-color);
+  color: white; 
+
+  box-shadow: 0 0 10px #ddd;
+}
+
+.login-box:hover, .register-box:hover {
+  box-shadow: 0 0 1em var(--secondary-color);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input.text-box {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color);
+  text-align: center;
+}
+
+input.button {
+  background-color: var(--secondary-color);
+
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+input.button:hover {
+  transition: 1s;
+  transform: scale(1.2); 
+  background-color: white;
+}
+
+

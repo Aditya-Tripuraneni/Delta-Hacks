@@ -1,6 +1,6 @@
 // Import the Firebase modules
-import * as firebase from "firebase/app";
-import "firebase/database";
+// import * as firebase from "firebase/app";
+// import "firebase/database";
 
 const apiKey = process.env.FIREBASE_API_KEY;
 
@@ -16,7 +16,7 @@ const firebaseConfig = {
     measurementId: "G-WSF92NTLQR"
   };
   
-  // Initialize Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = firebase.auth();
@@ -29,13 +29,15 @@ const database = firebase.database();
 
 //registers the user to the data base
 function registerUser(){ 
-
+  console.log("Hellow world")
 }
 
+function he(){
+  console.log("aosdubgfoadb")
+}
 
 //login the user to the databse
 function loginUser(){
-
 }
 
 

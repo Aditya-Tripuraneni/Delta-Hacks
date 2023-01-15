@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login and Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <label>Username</label>
+          <input class="text-box" type="text" name="username" required>
+          <label>Password</label>
+          <input class="text-box" type="password" name="password" required>
+          <input class="button" type="submit" value="Login" onclick="he()">
+        </form>
+      </div>
+      <div class="register-box">
+        <h2>Register</h2>
+        <form>
+          <label>Username</label>
+          <input id="username" class="text-box" type="text" name="username" required>
+          <label>Email</label>
+          <input id="email" class="text-box" type="email" name="email" required>
+          <label>Password</label>
+          <input id="password" class="text-box" type="password" name="password" required>
+          <label>Confirm Password</label>
+          <input class="text-box" type="password" name="confirm-password" required>
+          <input class="button" type="submit" value="Register" onclick="he()">
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
