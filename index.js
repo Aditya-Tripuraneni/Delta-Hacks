@@ -1,7 +1,7 @@
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyD_fE4cWZGsqqPCNgNeJx31kjM1KCYmQk4",
+  apiKey: "Key No Longer In Use",
   authDomain: "rbc-bizmatch.firebaseapp.com",
   databaseURL: "https://rbc-bizmatch-default-rtdb.firebaseio.com",
   projectId: "rbc-bizmatch",
